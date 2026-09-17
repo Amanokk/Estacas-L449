@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #020617;
+  --color-surface: #0f172a;
+  --color-subtle: #1e293b;
+  --color-fg: #f8fafc;
+  --color-muted: #94a3b8;
+  --color-accent: #f5c518;
+  --color-accent-fg: #0f172a;
+  --color-gps: #22d3ee;
+  --color-axis: #38bdf8;
+  --color-danger: #f87171;
+  --color-whatsapp: #16a34a;
+  --color-border: color-mix(in oklab, var(--color-fg) 12%, transparent);
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+.leaflet-container {
+  background: #020617;
+  font-family: var(--font-sans);
+  z-index: 0;
+}
+
+.leaflet-control-zoom a {
+  background: color-mix(in oklab, #0f172a 88%, transparent) !important;
+  color: #f8fafc !important;
+  border: 1px solid color-mix(in oklab, #f8fafc 12%, transparent) !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+}
+
+.stake-label {
+  background: #f8fafc;
+  color: #0f172a;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 1px 5px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+}
+
+.stake-label::before {
+  display: none;
+}
+
+.stake-balloon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.stake-balloon-inner {
+  background: linear-gradient(#fde68a, #f5c518);
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 2px solid #0f172a;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 0.35);
+  text-align: center;
+  position: relative;
+}
+
+.stake-balloon-inner::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: #f5c518;
+  border-bottom-width: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

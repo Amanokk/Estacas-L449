@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Estaca GPS",
+      "hasCanvas": false,
+      "bodyTextLen": 178,
+      "bodyTextHash": "c0327eb448c0e64c623036c90e55e0060ad9403884e832d48e7c8bd5c1d525b1",
+      "bodyTextPrefix": "Estaca GPS RETIRO SÃO JOAQUIM By Vitor Lucas RETIRO SÃO JOAQUIM ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Estaca GPS",
+      "hasCanvas": false,
+      "bodyTextLen": 156,
+      "bodyTextHash": "971191cf6cf36a065a7144baa44394ebfbab39589036667d85bd307a32cc9f36",
+      "bodyTextPrefix": "Estaca GPS RETIRO SÃO JOAQUIM By Vitor Lucas RETIRO SÃO JOAQUIM ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
